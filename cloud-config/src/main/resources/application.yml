@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+      name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\\DEV\workspace\spring-cloud-services
+          clone-on-start: true
+
+management:
+  security:
+    enabled: false
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    region: default
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
+
