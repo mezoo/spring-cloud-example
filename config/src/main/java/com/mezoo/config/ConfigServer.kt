@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.mezoo.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableConfigServer
 @EnableEurekaClient
-public class ConfigServer {
+class ConfigServer
 
-	public static void main(String[] args) {
-		SpringApplication.run(ConfigServer.class, args);
+	fun main(args: Array<String>) {
+		SpringApplication.run(ConfigServer::class.java, *args);
 	}
-}

@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>discovery</artifactId>
+	<artifactId>config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<!--TOTO REMOVE ??-->
+    <!--TOTO REMOVE ??-->
 	<packaging>jar</packaging>
 
-	<name>discovery</name>
-	<description>Eurêka Discovery Service</description>
+	<name>config</name>
+	<description>Spring Cloud Config Service</description>
 
     <properties>
         <kotlin.version>1.2.10</kotlin.version>
@@ -20,22 +20,25 @@
         <artifactId>spring-cloud-services</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../</relativePath>
-    </parent>
+	</parent>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
     </dependencies>
 
 </project>
